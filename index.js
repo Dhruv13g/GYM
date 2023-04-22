@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Fitness');
+mongoose.connect('mongodb+srv://dhruvgupta1301:MjNrN5vBda0AkJM0@cluster0.2vu59aa.mongodb.net/test');
 var db=mongoose.connection;
 db.on('error', console.log.bind(console, "connection error"));
 db.once('open', function(callback){
